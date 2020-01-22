@@ -3,6 +3,7 @@
 var through = require('through2');
 var cheerio = require('cheerio');
 var objectAssign = require('object-assign');
+var path = require('path');
 
 var reImageSrc = /^((?:(?:http|https):\/\/)?(?:.+))(\.(?:gif|png|jpg|jpeg|webp))$/;
 
@@ -12,7 +13,7 @@ var defaultOptions = {
 	// suffix: {1: '', 2: '@2x', 3: '@3x', 4: '@4x'},
  	// suffix: {1: '', 2: '@2x', 3: '@3x'},
 	suffix: {1: '', 2: '@2x'},
-	ignore: ['wp-', 'none']
+	ignore: ['wpn-', 'imgn-']
 }
 
 var imageRetina = function(options){
@@ -38,15 +39,16 @@ var imageRetina = function(options){
 
 		imgList.each(function(item){
 			var _this = $(this);
-			var src = _this.attr('src'),
-				className = _this.attr('class') || null;
+			var src = _this.attr('src');
+			var imgName = path.basename(src) || null;
+
 
 			var tmpSrc = [];
 			var match = src.match(reImageSrc);
 
 			// ignore
 			for (var i = defaultOptions.ignore.length - 1; i >= 0; i--) {
-				if ( (className != null && className.indexOf(defaultOptions.ignore[i]) != -1 ) ) {
+				if ( (imgName != null && imgName.indexOf(defaultOptions.ignore[i]) != -1 ) ) {
 					return true;
 				}
 			}

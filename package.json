@@ -26,8 +26,9 @@
   },
   "dependencies": {
     "cheerio": "^0.20.0",
-    "through2": "^2.0.1",
-    "object-assign": "^4.1.0"
+    "object-assign": "^4.1.0",
+    "path": "^0.12.7",
+    "through2": "^2.0.1"
   },
   "devDependencies": {
     "mocha": "^2.2.5",
