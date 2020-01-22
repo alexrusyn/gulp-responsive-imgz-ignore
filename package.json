@@ -1,6 +1,6 @@
 {
   "name": "gulp-responsive-imgz-ignore",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Add img attribute 'srcset' for retina. This version is able to ignore classes.",
   "main": "index.js",
   "repository": {
