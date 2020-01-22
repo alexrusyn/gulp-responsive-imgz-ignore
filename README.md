@@ -1,4 +1,4 @@
-# gulp-responsive-imgz
+# gulp-responsive-imgz-ignore
 ## (clone of the `gulp-responsive-imgz` repo)
 
 add img attribute 'srcset' for retina
@@ -8,7 +8,7 @@ You must have retina images in the folder which the original image in.
 
 ## Install
 
-`npm install gulp-responsive-imgz-ignore`
+`npm i gulp-responsive-imgz-ignore -D`
 
 ## Usage
 
