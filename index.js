@@ -47,8 +47,8 @@ var imageRetina = function(options){
 			var match = src.match(reImageSrc);
 
 			// ignore
-			for (var i = defaultOptions.ignore.length - 1; i >= 0; i--) {
-				if ( (imgName != null && imgName.indexOf(defaultOptions.ignore[i]) != -1 ) ) {
+			for (var i = options.ignore.length - 1; i >= 0; i--) {
+				if ( (imgName != null && imgName.indexOf(options.ignore[i]) != -1 ) ) {
 					return true;
 				}
 			}
