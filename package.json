@@ -1,0 +1,36 @@
+{
+  "name": "gulp-responsive-imgz-ignore",
+  "version": "0.0.6",
+  "description": "Add img attribute 'srcset' for retina. This version is able to ignore classes.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hyubert/gulp-responsive-imgz-ignore"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "retina",
+    "srcset",
+    "image",
+    "gulpplugin"
+  ],
+  "author": "Olex Rusyn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hyubert/gulp-responsive-imgz-ignore/issues"
+  },
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "through2": "^2.0.1",
+    "object-assign": "^4.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "gulp-util": "^3.0.5"
+  }
+}
