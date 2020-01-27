@@ -40,8 +40,10 @@ var imageRetina = function(options){
 		imgList.each(function(item){
 			var _this = $(this);
 			var src = _this.attr('src');
-			var imgName = path.basename(src) || null;
 
+			if (!src) return true;
+
+			var imgName = path.basename(src);
 
 			var tmpSrc = [];
 			var match = src.match(reImageSrc);

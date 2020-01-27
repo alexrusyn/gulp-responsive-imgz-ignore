@@ -11,8 +11,8 @@ var assert = require('assert');
 var gutil  = require('gulp-util');
 var imgRetina = require('./index');
 
-var imgInput = '<img src="wpn-blank.png"><img src="/path/blank.png"><img src>';
-var imgOutput = '<img src="wpn-blank.png"><img src="/path/blank.png" srcset="/path/blank.png 1x, /path/blank@2x.png 2x"><img src>';
+var imgInput = '<img src="wpn-blank.png"><img src="/path/blank.png"><img src><img>';
+var imgOutput = '<img src="wpn-blank.png"><img src="/path/blank.png" srcset="/path/blank.png 1x, /path/blank@2x.png 2x"><img src><img>';
 
 describe('gulp-img-retina', function() {
   it('should set img attribute', function (cb) {
