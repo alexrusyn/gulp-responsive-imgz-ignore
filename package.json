@@ -25,7 +25,7 @@
     "url": "https://github.com/Hyubert/gulp-responsive-imgz-ignore/issues"
   },
   "dependencies": {
-    "cheerio": "^0.20.0",
+    "cheerio": "^1.0.0-rc.12",
     "object-assign": "^4.1.0",
     "path": "^0.12.7",
     "through2": "^2.0.1"
